@@ -5,6 +5,7 @@ import CharacterList from './CharacterList'
 import WelcomePage from './WelcomePage'
 import LocationsList from './LocationsList'
 import EpisodesList from './EpisodesList'
+import SearchForm from './SearchForm'
 
 export default function AppRouter() {
     return <div >
@@ -13,7 +14,9 @@ export default function AppRouter() {
             <Route path = "/characters" component = {CharacterList} />
             <Route path ="/episodes" component = {EpisodesList} />
             <Route path ="/locations" component ={LocationsList}/>
+            <Route path="search" component={SearchForm} />
             
+            <Route component={SearchForm}/>
             <Route component={LocationsList}/>
             <Route component = {WelcomePage} />
             <Route component = {CharacterList} />

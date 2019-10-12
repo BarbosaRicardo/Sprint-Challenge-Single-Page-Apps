@@ -18,6 +18,8 @@ const welcomeLabel = createLabel("home", "Home Page");
 const characterLabel = createLabel("users", "Characters");
 const locationLabel = createLabel("globe", "Locations");
 const episodeLabel = createLabel("tv", "Episodes");
+const searchLabel = createLabel("search", "Search");
+
 
 const panes = [
   
@@ -51,6 +53,16 @@ const panes = [
         as={Nav}
         to={`/episodes`}
         content={episodeLabel}
+      />
+    )
+  },
+  {
+    menuItem: (
+      <Menu.Item
+        key="search"
+        as={Nav}
+        to={`/search`}
+        content={searchLabel}
       />
     )
   }
