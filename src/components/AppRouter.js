@@ -7,7 +7,7 @@ import CharacterList from './CharacterList'
 // import EpisodeList from './EpisodeList'
 
 export default function AppRouter() {
-    return <div >
+    return <div className = "character-list grid-view">
         <Switch>
             <Route path = "/characters" component = {CharacterList} />
             <Route component = {CharacterList} />
